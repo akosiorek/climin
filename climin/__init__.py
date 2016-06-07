@@ -8,10 +8,10 @@ import os
 import imp
 import ctypes
 
-if sys.platform == 'win32':
-    basepath = imp.find_module('numpy')[1]
-    ctypes.CDLL(os.path.join(basepath, 'core', 'libmmd.dll'))
-    ctypes.CDLL(os.path.join(basepath, 'core', 'libifcoremd.dll'))
+#if sys.platform == 'win32':
+#    basepath = imp.find_module('numpy')[1]
+#    ctypes.CDLL(os.path.join(basepath, 'core', 'libmmd.dll'))
+#    ctypes.CDLL(os.path.join(basepath, 'core', 'libifcoremd.dll'))
 
 from .adadelta import Adadelta
 from .adam import Adam
